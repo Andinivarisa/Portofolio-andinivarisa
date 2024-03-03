@@ -1,0 +1,156 @@
+body {
+    background: #FFC4E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #f30387;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px black(0,0,0,0.1);
+}
+
+.container.left_side {
+    position: relative;
+    background: #FF90BC;
+    padding: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.profiletext  h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.profiletext  h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactinfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #0a0a0a;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contactinfo ul {
+   position: relative;
+}
+
+.contactinfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 15px;
+    color: #FFC0D9;
+}
+
+.contactinfo ul li span {
+    color: #1a0211;
+    font-weight: 300px;
+}
+
+.contactinfo.Skills li {
+    margin-bottom: 15px;
+}
+
+.contactinfo.Skills h4 {
+    color: #0c0c0c;
+    font-weight: 500;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 50px;
+}
+
+.title2 {
+    color: #f91577;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #1a0211;
+}
+
+.interest ul li {
+    list-style: none;
+    color: #0d0d0d;
+    font-weight: 500;
+    margin: 50px 0;
+}
+
+.interest ul li.fa {
+    color: #f30387;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px){
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
